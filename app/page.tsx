@@ -38,7 +38,7 @@ export default function Home() {
                               <p className="text-slate-500 text-lg leading-relaxed max-w-2xl font-light">
                                   NEXUS oversetter komplekse stemme-intents til presise systemkommandoer på under ett millisekund.
                                   Ved å fjerne mus og tastatur som mellomledd, kan hvem som helst styre profesjonelle
-                                  lydsystemer med kun stemmen som verktøy.
+                                  systemer med kun stemmen som verktøy.
                               </p>
                           </div>
 
@@ -46,7 +46,7 @@ export default function Home() {
                           <div className="mt-12 p-4 bg-slate-50 rounded-sm border-l-4 border-blue-500">
                               <p className="text-xs text-slate-600 italic font-medium leading-relaxed">
                                   "Dette er demokratisering av skaperglede – vi fjerner de fysiske barrierene
-                                  og sikrer full universell utforming (UU) i profesjonell musikkproduksjon."
+                                  og sikrer full universell utforming (UU) i for eks. profesjonell musikkproduksjon."
                               </p>
                           </div>
                       </div>
@@ -88,7 +88,66 @@ export default function Home() {
                       </Card>
 
                   </div>
-              </section>         
+              </section>    
+
+
+              {/* ARBEIDSFLYT: FRA TANKER TIL HANDLING */}
+            <section className="max-w-5xl mx-auto px-6 py-24 border-t border-slate-100">
+              <div className="text-center space-y-4 mb-16">
+                <h3 className="text-blue-600 font-mono text-[10px] tracking-[0.4em] uppercase font-bold text-center">
+                  Arbeidsflyt.
+                </h3>
+                <h2 className="text-4xl md:text-6xl font-bold tracking-tighter text-slate-950 text-center">
+                  Fra tanke til <span className="italic text-slate-400 font-light underline decoration-blue-500/20">handling.</span>
+                </h2>
+              </div>
+
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-8 pt-4">
+                {/* STEG 01 */}
+                <div className="space-y-6 group">
+                  <div className="text-6xl font-black text-blue-500  transition-colors duration-500">
+                    01
+                  </div>
+                  <h4 className="text-xl font-bold text-slate-950 flex items-center gap-2">
+                    <div className="w-1.5 h-1.5 bg-blue-600 rounded-full" />
+                    Nevral Tolking
+                  </h4>
+                  <p className="text-slate-500 text-sm leading-relaxed font-light">
+                    Stemmekommandoen fanges opp lokalt og tolkes av <strong>Neural Engine</strong>. Vi forstår intensjonen bak ordene dine, ikke bare lydbølgene.
+                  </p>
+                </div>
+    
+                {/* STEG 02 */}
+                <div className="space-y-6 group border-t md:border-t-0 md:border-l border-slate-100 md:pl-12 pt-8 md:pt-0">
+                          <div className="text-6xl font-black text-blue-500  transition-colors duration-500">
+                    02
+                  </div>
+                  <h4 className="text-xl font-bold text-slate-950 flex items-center gap-2">
+                    <div className="w-1.5 h-1.5 bg-blue-600 rounded-full" />
+                    NEXUS Oppslag
+                  </h4>
+                  <p className="text-slate-500 text-sm leading-relaxed font-light">
+                    Intensjonen mappes mot <strong>Shared Memory Registry</strong>. Ved å bruke nanosekunder på oppslaget, fjernes all merkbar forsinkelse.
+                  </p>
+                </div>
+
+                {/* STEG 03 */}
+                <div className="space-y-6 group border-t md:border-t-0 md:border-l border-slate-100 md:pl-12 pt-8 md:pt-0">
+                          <div className="text-6xl font-black text-blue-500  transition-colors duration-500">
+                    03
+                  </div>
+                  <h4 className="text-xl font-bold text-slate-950 flex items-center gap-2">
+                    <div className="w-1.5 h-1.5 bg-blue-600 rounded-full" />
+                    Direkte Handling
+                  </h4>
+                  <p className="text-slate-500 text-sm leading-relaxed font-light">
+                        Kommandoen utføres umiddelbart i ditt digitale miljø  .
+                        NEXUS fjerner behovet for mus og tastatur, og lar stemmen din styre teknologien i sanntid.
+
+                  </p>
+                </div>
+              </div>
+            </section>
 
       </main>
     </div>

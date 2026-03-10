@@ -19,8 +19,8 @@ export const Footer = () => {
         <div className="flex flex-col gap-3 text-sm">
           <span className="text-slate-600 font-bold mb-2">Ressurser</span>
             <Link href="https://github.com/BinaryBeatSolutions/IntelligentAudio.NET" target="_blank" className="text-slate-500 hover:text-blue-600 transition-colors">GitHub Repository</Link>
-            <Link href="https://github.com/BinaryBeatSolutions/IntelligentAudio.NET" className="text-slate-500 hover:text-blue-600 transition-colors">Teknisk Dokumentasjon</Link>
-            <Link href="https://intelligentaudio.net" className="text-slate-500 hover:text-blue-600 transition-colors">IntelligentAudio.NET</Link>
+                  <Link href="https://github.com/BinaryBeatSolutions/IntelligentAudio.NET/blob/master/ARCHITECT.md" target="_blank" className="text-slate-500 hover:text-blue-600 transition-colors">Teknisk Dokumentasjon</Link>
+            <Link href="https://intelligentaudio.net" className="text-slate-500 hover:text-blue-600 transition-colors" target="_blank">IntelligentAudio.NET</Link>
         </div>
 
         {/* TECH STACK / METADATA */}
@@ -35,7 +35,12 @@ export const Footer = () => {
          <div className="flex flex-col">
          <div className="font-bold tracking-tighter text-[17px] leading-none text-white">IntelligentAudio<span className="text-blue-500">.NET</span></div>
          <span className="text-[8px] font-mono text-blue-500 tracking-[0.2em] leading-none mt-1 uppercase">Neural Harmonic Network</span></div>
-        </div>
+         </div>
+
+
+
+
+
       </div>
     </footer>
   )
