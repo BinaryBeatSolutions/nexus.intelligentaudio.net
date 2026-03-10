@@ -31,7 +31,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="no" suppressHydrationWarning>
-          <body className="antialiased min-h-screen  font-sans">
+          <body className="antialiased min-h-screen font-sans">
           <Navbar />
           {children}
           <Footer />
