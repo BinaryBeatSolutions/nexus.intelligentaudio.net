@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
-import { ThemeProvider } from "next-themes";
 import { Geist, Geist_Mono } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next"
+import { Navbar } from "@/components/Navbar"
+import { Footer } from "@/components/Footer"
 import "./globals.css";
 
 const geistSans = Geist({
@@ -26,27 +27,16 @@ export const metadata: Metadata = {
   },
 };
 
-// Lägg till React.ReactNode typen för att fixa Intellisense
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="no" suppressHydrationWarning>
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen bg-background text-foreground`}
-      >
-        <ThemeProvider 
-          attribute="class" 
-          defaultTheme="light" 
-          themes={["light", "contrast"]}
-          enableSystem={false}
-        >
+          <body className="antialiased min-h-screen  font-sans">
+          <Navbar />
           {children}
+          <Footer />
           <Analytics />
-        </ThemeProvider>
       </body>
     </html>
-  );
+  )
 }
